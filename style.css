@@ -105,6 +105,7 @@ body{
 
 .data>a:hover{
 	cursor: pointer;
+	color: var(--greyBlue);
 }
 
 .data>a:active{
@@ -120,11 +121,17 @@ body{
 	padding      : 1em 1.7em;
 	border-radius: 1em;
 	box-shadow   : 0 15px 15px 0 var(--colorBBT);
+	transition: all ease-in-out 0.1s;
 }
-.payment:hover{ cursor:pointer;}
+.payment:hover{ 
+	cursor:pointer;
+	color: var(--veryPaleBlue);
+	background-color: var(--hover);
+}
 .payment:active{
 	cursor          : pointer;
-	background-color: var(--hover);
+	background-color: var(--colorBB);
+	color: var(--colorBG);
 }
 
 .cancel-order{
@@ -133,11 +140,19 @@ body{
 	font-weight  : 700;
 	color        : var(--greyBlue);
 }
-.cancel-order:hover{cursor: pointer;}
+.cancel-order:hover{
+	cursor: pointer; 
+	color: var(--darkBlue);
+}
+
 .cancel-order:active{
 	cursor     : pointer;
 	font-weight: 900;
 	color      : var(--darkBlue);
+}
+
+.attribution>a:hover{
+	color: var(--colorBB);
 }
 
 @media screen and (max-width: 420px){
