@@ -96,21 +96,22 @@ body{
 	color      : var(--greyBlue);
 	margin     : 0.5em 0;
 }
-
-.data>a{
+.data>a:link{
 	font-weight: 900;
 	color      : var(--colorBB);
 	font-size  : 0.9rem;
 }
-
-.data>a:hover{
-	cursor: pointer;
+.data>a:visited{
 	color: var(--greyBlue);
 }
-
-.data>a:active{
+.data>a:hover{
+	cursor: pointer;
 	color: var(--hover);
 }
+.data>a:active{
+	color: var(--darkBlue);
+}
+
 
 .payment{
 	background   : var(--colorBB);
@@ -151,9 +152,16 @@ body{
 	color      : var(--darkBlue);
 }
 
+.attribution a:link { color: hsl(228, 45%, 44%); font-weight: 700;}
+.attribution>a:visited{ color: hsl(340, 20% 20%); font-weight: 300;}
 .attribution>a:hover{
 	color: var(--colorBB);
 }
+.attribution>a:active{
+	color: var(--hover);
+}
+
+
 
 @media screen and (max-width: 420px){
 
